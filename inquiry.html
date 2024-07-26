@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ratemyweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/skeg.png" >
+    <title>Inquiry Form</title>
+</head>
+<header>
+    <nav class="nav">
+        <a href="index.html"><i class="fa fa-home"></i> HOME</a>
+        <a href="personalprof.html"><i class="fa fa-user"></i> ABOUT ME</a> 
+
+        <div class="dropdown">
+        <a href="experience.html"><i class="fa fa-briefcase"></i> EXPERIENCE</a>
+      </div>
+      <div class="dropdown">
+        <a href=""><i class="fa fa-folder"></i> PROJECTS <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="#">PROGRAMMING</a>
+          <a href="arti.html">ARTICLES</a>
+        </div>
+        </div>
+        <img src="images/skeg.png" class="logo">
+        <a href="rmo.html" id="resume"><i class="fa fa-comments"></i> REACH ME OUT</a>
+    </nav>
+    <nav class="nav2"></nav>
+</header>
+<body>
+    <form id="survey-form" method="POST" action="#">
+    <h1  id="title">SEND ME AN INQUIRY</h1>
+    <br>
+    <fieldset>
+        <label>Enter Name: <br><br> <input type="text" required placeholder="Shawn Kieffer Goyena"></label>
+        <br>
+        <label>Enter Email: <br><br> <input type="text" required placeholder="goyenashawn@gmail.com"></label>
+        <br>
+        <label>Enter Facebook Profile Link: <br><br> <input type="text" required placeholder="https://www.facebook.com/g.shawnkieffergoyena/"></label>
+        <label>Inquiry</label> <br>
+        <textarea placeholder="Good day! I am writing this message..."></textarea>
+        <button>SUBMIT</button>
+    </fieldset>
+</body>
+</html>

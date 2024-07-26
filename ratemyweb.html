@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ratemyweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/skeg.png" >
+    <title>Rate My Website</title>
+</head>
+<header>
+    <nav class="nav">
+        <a href="index.html"><i class="fa fa-home"></i> HOME</a>
+        <a href="personalprof.html"><i class="fa fa-user"></i> ABOUT ME</a> 
+
+        <div class="dropdown">
+        <a href="experience.html"><i class="fa fa-briefcase"></i> EXPERIENCE</a>
+      </div>
+      <div class="dropdown">
+        <a href=""><i class="fa fa-folder"></i> PROJECTS <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="prog.html">PROGRAMMING</a>
+          <a href="arti.html">ARTICLES</a>
+        </div>
+        </div>
+        <img src="images/skeg.png" class="logo">
+        <a href="rmo.html" id="resume"><i class="fa fa-comments"></i> REACH ME OUT</a>
+    </nav>
+    <nav class="nav2"></nav>
+</header>
+<body>
+    <form id="survey-form" method="POST" action="#">
+        <h1 id="title">CONTACT THE AUTHOR</h1>
+        <br>
+        <fieldset>
+        <label id="name-label">Enter Your Name: <br><br> <input type="text" required id="name" placeholder="Chris Tala"></label>
+        <br>
+        <label id="email-label">Enter Your Email: <br><br> <input type="email" id="email" required placeholder="christala@gmail.com"></label>
+        <br>
+        <label id="number-label">Enter Your Age: <br><br> <input type="number" id="number" required min="13" max="120" placeholder="19" value="yrs"></label>
+        </fieldset>
+
+        <fieldset>
+        <label>How Did You Hear About My Wesbite?</label>
+        <label><input type="radio" name="how-did-you-hear" value="ff"> Friends/Families</label>
+        <label><input type="radio" name="how-did-you-hear" value="adds"> Ads</label>
+        <label><input type="radio" name="how-did-you-hear" value="int"> Internet</label>
+        <label><input type="radio" name="how-did-you-hear"value="man"> Others</label><br>
+        <label>If Answered "Others": <br><br> <input type="text" placeholder="By a random tiktok video..." name="how-did-you-hear"></label>
+        
+        </fieldset>
+        <label>What Is Your Gender?</label>
+        <label><input type="radio" name="gender" value="man"> Male</label>
+        <label><input type="radio" name="gender" value="woman"> Female</label>
+        <label><input type="radio" name="gender" value="n/a"> Prefer not to say</label>
+        <label><input type="radio" name="gender" value="man"> Others</label><br>
+        <label>If Answered "Others": <br><br> <input type="text" placeholder="Asexual" name="gender"></label>
+        
+        <fieldset>
+            <label>Which option best describes your current role?</label><br>
+            <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Student</option>
+                <option value="2">Part Time Worker</option>
+                <option value="3">Full Time Worker</option>
+                <option value="4">Prefer Not To Say</option>
+            </select>
+
+        </fieldset>
+        <label>What are your suggestions for improvements to the website? 
+            (Check all that apply)</label> <br>
+        
+        <label><input type="checkbox" value="wa">Website Appearance</label>
+        <label><input type="checkbox" value="ct">Content</label>
+        <label><input type="checkbox" value="mv">Media/Video</label>
+        <label><input type="checkbox" value="gr">Grammar</label>
+            
+    <br>
+        <label>Any Comments or Suggestions?</label> <br>
+        <textarea placeholder="The design is very.."></textarea>
+
+    <fieldset>
+    <button>SUBMIT</button>
+    </fieldset>
+</body>
+</html>
